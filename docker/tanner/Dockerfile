@@ -15,7 +15,7 @@ RUN apk -U --no-cache add \
                python3 \
                python3-dev && \
 # Setup Tanner
-    git clone --depth=1 https://github.com/mushorg/tanner /opt/tanner && \
+    git clone --depth=1 --branch fix/aioredis-dependency https://github.com/blitzcaster/tanner /opt/tanner && \
     cp /root/dist/config.yaml /opt/tanner/tanner/data/ && \
     cd /opt/tanner/ && \
     pip3 install --no-cache-dir setuptools && \
