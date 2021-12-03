@@ -22,7 +22,6 @@ MarkupSafe==2.0.1
 maxminddb==2.2.0
 mimesis==2.1.0
 multidict==5.2.0
-pkg_resources==0.0.0
 pycodestyle==2.8.0
 PyJWT==2.3.0
 pylibinjection==0.2.4
