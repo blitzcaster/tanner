@@ -19,7 +19,7 @@ RUN apk -U --no-cache add \
     cp /root/dist/config.yaml /opt/tanner/tanner/data/ && \
     cd /opt/tanner/ && \
     mkdir /opt/tanner/logs && \
-    pip3 install --no-cache-dir setuptools && \
+    python3 -m pip install --upgrade --no-cache-dir pip setuptools wheel && \
     pip3 install --no-cache-dir -r requirements.txt && \
     python3 setup.py install && \
     cd / && \
